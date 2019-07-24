@@ -45,8 +45,7 @@ class StyleComponent extends Component {
     }
 
     return (
-        
-      <div className="App">
+      <div>
         <h1>Styling</h1>
         <button 
             style={style} //Add inline style

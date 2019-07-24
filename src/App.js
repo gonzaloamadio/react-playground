@@ -7,8 +7,9 @@ import './App.css';
 // import ConditionalRender from './components/presentational/conditional-render'
 // import ConditionalRenderUpgraded from './components/presentational/conditional-render-upgraded'
 // import UnmutableWayOfUpdateState from './components/state/unmutable-way'
-import Lists from './components/presentational/lists'
-import ListsBinding from './components/presentational/lists-function-binding'
+// import Lists from './components/presentational/lists'
+// import ListsBinding from './components/presentational/lists-function-binding'
+import DynamicStyling from './components/styling/dynamic-styling'
 
 class App extends Component {
   render() {
@@ -20,8 +21,9 @@ class App extends Component {
         {/* <ConditionalRender /> */}
         {/* <ConditionalRenderUpgraded /> */}
         {/* <UnmutableWayOfUpdateState /> */}
-        <Lists />
-        <ListsBinding />
+        {/* <Lists /> */}
+        {/* <ListsBinding /> */}
+        <DynamicStyling />
       </div>
     );
   }
