@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import Person from './Person';
+import Radium from 'radium'  // Import this line
 
-// We are going to change a paragraph style depending on how many persons are we showing.
-// When we start deleting Person, depending on the number of them, the paragraph
-// will have a different set of styles.
+// Radium let us use pseudo selectors and media querys with in-lin style
 
-class DynamicStyling extends Component {
+class RadiumStyling extends Component {
   state = {
     persons: [
       { id:'asd', name: 'Max', age: 28 },
@@ -13,7 +12,6 @@ class DynamicStyling extends Component {
       { id:'zcx', name: 'John', age: 29 },
     ],
     showPersons: false,
-    classes : []
   };
 
   togglePerson = () => {
@@ -25,20 +23,8 @@ class DynamicStyling extends Component {
     const persons = [...this.state.persons]
     persons.splice(personIndex,1)
     this.setState({persons:persons})
-
-    // Like this, we should manage when to take out from state (if we add elems)
-    // Also, make push only if it was not already made. Becaus if for example
-    // it is <= 10, each time we delete something less than 10, the class will be added.
-    let c = [...this.state.classes]
-    if (persons.length <= 2){
-        this.setState({classes: c.concat('red')})
-    }
-    if (persons.length <= 1){
-        this.setState({classes: c.concat('bold')})
-    }
   }
 
-  // red and bold are classes defined in App.css (or some another imported css)
   _handleClasses(){
     const classes = []
     if (this.state.persons.length <= 2){
@@ -54,24 +40,19 @@ class DynamicStyling extends Component {
 
     let persons = null;
     const style = {
-        backgroundColor: 'white',
+        backgroundColor: 'green',
+        color: 'white',
         font: 'inherit',
         border: '1px solid blue',
         padding: '8px',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        ':hover' : {    // Ad any pseudo selector (as string!) and its properties
+          backgroundColor: 'lightgreen',
+          color: 'black'
+        }   
     }
 
-    // WAY 1
-    const classes = []
-    if (this.state.persons.length <= 2){
-        classes.push('red')
-    }
-    if (this.state.persons.length <= 1){
-        classes.push('bold')
-    }
-
-    // WAY 2
-    const classes2 = this._handleClasses()
+    const classes = this._handleClasses()
     
     if( this.state.showPersons ){
         persons = (
@@ -90,17 +71,17 @@ class DynamicStyling extends Component {
             </div>
         );
 
-        style.backgroundColor = 'red'
+        style.backgroundColor = 'Crimson'
+        style[':hover'] = {    // Acces like this, because it is a string. We cant use dot notation
+          backgroundColor: 'Tomato',
+          color: 'black'
+        }  
     }
 
     return (
       <div className="App">
         <h1>Dynamic Styling</h1>
-        <p className={classes.join(' ')}> Persons </p>  {/* WAY 1 */}
-        <p className={classes2.join(' ')}> Persons </p> {/* WAY 2 */}
-        <p className={this.state.classes.join(' ')}> Persons </p> {/* WAY 3 */}
-        {/* And another imaginable way of assigning a string there is possible.
-        From a fetch, from */}
+        <p className={classes.join(' ')}> Persons </p>
         <button 
             style={style}
             onClick={this.togglePerson}>Switch Name</button>
@@ -110,4 +91,4 @@ class DynamicStyling extends Component {
   }
 }
 
-export default DynamicStyling;
+export default Radium(RadiumStyling); // Wrap exported app. High order component
