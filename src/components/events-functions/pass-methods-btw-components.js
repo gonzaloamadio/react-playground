@@ -27,7 +27,7 @@ class Pmbc extends Component {
     this.setState( {
       persons: [
         { name: 'Max', age: 28 },
-        { name: event.target.value, age: 29 },
+        { name: event.target.value, age: 29 }, // Read elem value, so we make a two ways binding
         { name: 'Stephanie', age: 26 }
       ]
     } )
