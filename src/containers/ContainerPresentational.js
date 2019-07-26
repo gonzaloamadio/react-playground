@@ -4,6 +4,11 @@ import classes from './App.css';
 import Persons from '../components/Persons/Persons';
 import Cockpit from '../components/Cockpit/Cockpit';
 
+// We separate logic from presentation in different components that
+// follows the pattern of container-presentational components.
+// This one has the state logic.
+// Cockpit, Persons and Person are just presentational components.
+
 export default class ContainerPresentational extends Component {
   constructor(props) {
     super(props);
