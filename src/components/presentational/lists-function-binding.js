@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Person from './Person2';
+import Person from '../Persons/Person/Person2';
+
 
 class ListsBinding extends Component {
   state = {

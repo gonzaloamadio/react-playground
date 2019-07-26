@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Person from './Person';
+import Person from '../Persons/Person/Person3';
 
 class Pmbc extends Component {
   state = {

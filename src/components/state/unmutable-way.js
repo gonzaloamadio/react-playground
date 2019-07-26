@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Person from './Person';
+import Person from '../Persons/Person/Person';
 
 class UnmutableWayOfUpdateState extends Component {
   state = {
@@ -41,7 +41,7 @@ class UnmutableWayOfUpdateState extends Component {
             {this.state.persons.map( (person,index) => {
             return (          
                 <Person
-                clickDelete={this.handleDeletePerson.bind(this,index)}
+                click={this.handleDeletePerson.bind(this,index)}
                 name={person.name}
                 age={person.age}
                 key={person.id}

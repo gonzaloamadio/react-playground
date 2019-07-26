@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Person.css' 
-import styles from '../../App.css'
+import styles from '../../containers/App.css'
 // Use of CSS Modules
 
 const person = ( props ) => {

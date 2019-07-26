@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Person from './Person2';
-import styles from '../../App.css'
+import styles from '../../containers/App.css'
 
 // Radium let us use pseudo selectors and media querys with in-lin style
 

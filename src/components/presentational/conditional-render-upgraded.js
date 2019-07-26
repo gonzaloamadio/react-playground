@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Person from './Person';
+import Person from '../Persons/Person/Person';
+
 
 class ConditionalRenderUpgraded extends Component {
   state = {

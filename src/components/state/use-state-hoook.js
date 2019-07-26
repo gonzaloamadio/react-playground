@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Person from './Person';
+import Person from '../Persons/Person/Person';
+
 
 const StateHook = props => {
   const [personsState, setPersonsState] = useState({
@@ -47,7 +48,6 @@ const StateHook = props => {
       />
     </div>
   );
-  // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
 };
 
 export default StateHook;
