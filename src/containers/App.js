@@ -5,10 +5,10 @@ import classes from './App.css';
 
 // import StateClassBased from '../components/state/class-based'
 // import StateHook from '../components/state/use-state-hoook'
+// import UnmutableWayOfUpdateState from '../components/state/unmutable-way'
 // import Pmbc from '../components/events-functions/pass-methods-btw-components'
 // import ConditionalRender from '../components/presentational/conditional-render'
 // import ConditionalRenderUpgraded from '../components/presentational/conditional-render-upgraded'
-// import UnmutableWayOfUpdateState from '../components/state/unmutable-way'
 // import Lists from '../components/presentational/lists'
 // import ListsBinding from '../components/presentational/lists-function-binding'
 // import DynamicStyling from '../components/styling/02-dynamic-styling'
@@ -16,23 +16,45 @@ import classes from './App.css';
 // import CssModulesStyling from '../components/styling/04-css-modules'
 // import TestErrorBoundary from '../components/errors/TestErrorBoundary'
 
+import ContainerPresentational from './ContainerPresentational'
+
 class App extends Component {
   render() {
     return (
       // <StyleRoot>   // Comment this, because we configure css modules.
       <div className={classes.App}>
+        
+        {/* ----- STATE MODIFICATION EXAMPLES ----- */}
+        
         {/* <StateClassBased /> */}
         {/* <StateHook /> */}
+        {/* <UnmutableWayOfUpdateState /> */}
+
+        {/* ----- COMUNICATION BETWEEN COMPONENTS ----- */}
+
         {/* <Pmbc /> */}
+
+        {/* ----- RENDERING / PRESENTATIONAL ----- */}
+
         {/* <ConditionalRender /> */}
         {/* <ConditionalRenderUpgraded /> */}
-        {/* <UnmutableWayOfUpdateState /> */}
         {/* <Lists /> */}
         {/* <ListsBinding /> */}
+
+        <ContainerPresentational />
+
+
+        {/* ----- STYLING ----- */}
+
         {/* <DynamicStyling /> */}
         {/* <RadiumStyling /> */} {/* To use this, undo css modules config? */} 
         {/* <CssModulesStyling /> */}
         {/* <TestErrorBoundary /> */}
+
+        {/* ----- RENDERING ----- */}
+
+        {/* ----- LIFE CYCLE ----- */}
+
       </div>
      // </StyleRoot>
     );
