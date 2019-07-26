@@ -8,8 +8,9 @@
 }
 
 /* We can normally do this.  */
-/* @media (min-width: 500px) {
+/* And if we have css modules configured, it will be scoped to the component that imports this file */
+@media (min-width: 500px) {
     .Person {
         width: 450px;
     }
-}    */
+}   
