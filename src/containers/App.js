@@ -15,8 +15,11 @@ import classes from './App.css';
 // import RadiumStyling from '../components/styling/03-radium-styling'
 // import CssModulesStyling from '../components/styling/04-css-modules'
 // import TestErrorBoundary from '../components/errors/TestErrorBoundary'
+// import ContainerPresentational from './ContainerPresentational'
 
-import ContainerPresentational from './ContainerPresentational'
+// LIFECYCLES
+// import LifeCycleCreation from '../components/life-cycle/LifeCycle-Creation'
+import LifeCycleUpdate from '../components/life-cycle/Update/Update'
 
 class App extends Component {
   render() {
@@ -40,9 +43,7 @@ class App extends Component {
         {/* <ConditionalRenderUpgraded /> */}
         {/* <Lists /> */}
         {/* <ListsBinding /> */}
-
-        <ContainerPresentational />
-
+        {/* <ContainerPresentational /> */}
 
         {/* ----- STYLING ----- */}
 
@@ -51,9 +52,10 @@ class App extends Component {
         {/* <CssModulesStyling /> */}
         {/* <TestErrorBoundary /> */}
 
-        {/* ----- RENDERING ----- */}
-
         {/* ----- LIFE CYCLE ----- */}
+
+        {/* <LifeCycleCreation /> */}
+        <LifeCycleUpdate />
 
       </div>
      // </StyleRoot>
