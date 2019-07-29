@@ -20,7 +20,9 @@ import classes from './App.css';
 // LIFECYCLES
 // import LifeCycleCreation from '../components/life-cycle/LifeCycle-Creation'
 // import LifeCycleUpdate from '../components/life-cycle/Update/Update'
-import LfuseEffect from '../components/life-cycle/hook-useEffect'
+// import LfuseEffect from '../components/life-cycle/hook-useEffect'
+import AdjacentElements from '../components/presentational/return-adjacent-jsx-elems'
+
 
 class App extends Component {
   render() {
@@ -45,6 +47,7 @@ class App extends Component {
         {/* <Lists /> */}
         {/* <ListsBinding /> */}
         {/* <ContainerPresentational /> */}
+        <AdjacentElements />
 
         {/* ----- STYLING ----- */}
 
