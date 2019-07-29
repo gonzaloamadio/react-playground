@@ -58,6 +58,7 @@ export default class SetStateCorrectly extends Component {
       const persons = (
         <Persons
           persons={this.state.persons}
+          clicked={() => {}}
           changed={this.nameChangedHandler}
         />
       );
