@@ -19,7 +19,8 @@ import classes from './App.css';
 
 // LIFECYCLES
 // import LifeCycleCreation from '../components/life-cycle/LifeCycle-Creation'
-import LifeCycleUpdate from '../components/life-cycle/Update/Update'
+// import LifeCycleUpdate from '../components/life-cycle/Update/Update'
+import LfuseEffect from '../components/life-cycle/hook-useEffect'
 
 class App extends Component {
   render() {
@@ -55,7 +56,8 @@ class App extends Component {
         {/* ----- LIFE CYCLE ----- */}
 
         {/* <LifeCycleCreation /> */}
-        <LifeCycleUpdate />
+        {/* <LifeCycleUpdate /> */}
+        {/* <LfuseEffect> */}
 
       </div>
      // </StyleRoot>

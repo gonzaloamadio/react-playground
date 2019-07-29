@@ -4,7 +4,7 @@ import classes from './App.css';
 import Persons from '../Persons/Persons';
 import Cockpit from '../Cockpit/Cockpit';
 
-export default class useEffect extends Component {
+export default class LfuseEffect extends Component {
   constructor(props) {
     super(props);
     console.log('[App.js] constructor');
