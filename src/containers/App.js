@@ -16,12 +16,12 @@ import classes from './App.css';
 // import CssModulesStyling from '../components/styling/04-css-modules'
 // import TestErrorBoundary from '../components/errors/TestErrorBoundary'
 // import ContainerPresentational from './ContainerPresentational'
-
-// LIFECYCLES
 // import LifeCycleCreation from '../components/life-cycle/LifeCycle-Creation'
 // import LifeCycleUpdate from '../components/life-cycle/Update/Update'
 // import LfuseEffect from '../components/life-cycle/hook-useEffect'
-import AdjacentElements from '../components/presentational/return-adjacent-jsx-elems'
+// import AdjacentElements from '../components/presentational/return-adjacent-jsx-elems'
+import HocComponent from '../components/hoc-cmp/hoc-component'
+import HocFunction from '../components/hoc-cmp/hoc-function'
 
 
 class App extends Component {
@@ -47,13 +47,16 @@ class App extends Component {
         {/* <Lists /> */}
         {/* <ListsBinding /> */}
         {/* <ContainerPresentational /> */}
-        <AdjacentElements />
+        {/* <AdjacentElements /> */}
 
         {/* ----- STYLING ----- */}
 
         {/* <DynamicStyling /> */}
         {/* <RadiumStyling /> */} {/* To use this, undo css modules config? */} 
         {/* <CssModulesStyling /> */}
+
+        {/* ----- Errors ----- */}
+
         {/* <TestErrorBoundary /> */}
 
         {/* ----- LIFE CYCLE ----- */}
@@ -61,6 +64,11 @@ class App extends Component {
         {/* <LifeCycleCreation /> */}
         {/* <LifeCycleUpdate /> */}
         {/* <LfuseEffect> */}
+
+        {/* ----- HOC ----- */}
+
+        <HocComponent />
+        <HocFunction text={'Mi texto de prueba'}/>
 
       </div>
      // </StyleRoot>
