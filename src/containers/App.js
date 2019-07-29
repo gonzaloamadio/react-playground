@@ -6,7 +6,7 @@ import classes from './App.css';
 // import StateClassBased from '../components/state/class-based'
 // import StateHook from '../components/state/use-state-hoook'
 // import UnmutableWayOfUpdateState from '../components/state/unmutable-way'
-import SetStateCorrectly from '../components/state/setStateCorrectly'
+// import SetStateCorrectly from '../components/state/setStateCorrectly'
 // import Pmbc from '../components/events-functions/pass-methods-btw-components'
 // import ConditionalRender from '../components/presentational/conditional-render'
 // import ConditionalRenderUpgraded from '../components/presentational/conditional-render-upgraded'
@@ -23,6 +23,7 @@ import SetStateCorrectly from '../components/state/setStateCorrectly'
 // import AdjacentElements from '../components/presentational/return-adjacent-jsx-elems'
 // import HocComponent from '../components/hoc-cmp/hoc-component'
 // import HocFunction from '../components/hoc-cmp/hoc-function'
+import PropTypesCmp from '../components/prop-types/PropTypes'
 
 
 class App extends Component {
@@ -36,7 +37,7 @@ class App extends Component {
         {/* <StateClassBased /> */}
         {/* <StateHook /> */}
         {/* <UnmutableWayOfUpdateState /> */}
-        <SetStateCorrectly />
+        {/* <SetStateCorrectly /> */}
 
         {/* ----- COMUNICATION BETWEEN COMPONENTS ----- */}
 
@@ -71,6 +72,9 @@ class App extends Component {
 
         {/* <HocComponent /> */}
         {/* <HocFunction text={'Mi texto de prueba'}/> */}
+
+        {/* Prop Types */}
+        <PropTypesCmp />
 
       </div>
      // </StyleRoot>
