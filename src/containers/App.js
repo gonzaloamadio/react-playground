@@ -7,7 +7,9 @@ import classes from './App.css';
 // import StateHook from '../components/state/use-state-hoook'
 // import UnmutableWayOfUpdateState from '../components/state/unmutable-way'
 // import SetStateCorrectly from '../components/state/setStateCorrectly'
-// import Pmbc from '../components/events-functions/pass-methods-btw-components'
+// import Pmbc from '../components/communication/pass-methods-btw-components'
+// import Ref from '../components/communication/references/Ref'
+import RefWithHooks from '../components/communication/references/RefWithHooks'
 // import ConditionalRender from '../components/presentational/conditional-render'
 // import ConditionalRenderUpgraded from '../components/presentational/conditional-render-upgraded'
 // import Lists from '../components/presentational/lists'
@@ -23,7 +25,7 @@ import classes from './App.css';
 // import AdjacentElements from '../components/presentational/return-adjacent-jsx-elems'
 // import HocComponent from '../components/hoc-cmp/hoc-component'
 // import HocFunction from '../components/hoc-cmp/hoc-function'
-import PropTypesCmp from '../components/prop-types/PropTypes'
+// import PropTypesCmp from '../components/prop-types/PropTypes'
 
 
 class App extends Component {
@@ -42,6 +44,8 @@ class App extends Component {
         {/* ----- COMUNICATION BETWEEN COMPONENTS ----- */}
 
         {/* <Pmbc /> */}
+        {/* <Ref /> */}
+        <RefWithHooks />
 
         {/* ----- RENDERING / PRESENTATIONAL ----- */}
 
@@ -73,8 +77,8 @@ class App extends Component {
         {/* <HocComponent /> */}
         {/* <HocFunction text={'Mi texto de prueba'}/> */}
 
-        {/* Prop Types */}
-        <PropTypesCmp />
+        {/* ----- Prop Types ----- */}
+        {/* <PropTypesCmp /> */}
 
       </div>
      // </StyleRoot>
