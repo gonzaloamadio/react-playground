@@ -3,11 +3,14 @@ import React, { useEffect } from 'react';
 import classes from './Cockpit.css';
 
 
-// Second most important hook. It Combines the functionality or the cases that can be covered by all the class based components life-cycles.
+// Second most important hook. It Combines the functionality or 
+// the cases that can be covered by all the class based components life-cycles.
 
 // By default takes a function that will run for every render cycle.
 
-// So for example we can do what we could have done in ComponentDidUpdate, for example an HTTP request. Also runs the first time, so it will be the same as ComponentDidMount to.
+// So for example we can do what we could have done in ComponentDidUpdate, 
+// for example an HTTP request. Also runs the first time, so it will be 
+// the same as ComponentDidMount to.
 
 // ----------  How do we control it usage?
 
