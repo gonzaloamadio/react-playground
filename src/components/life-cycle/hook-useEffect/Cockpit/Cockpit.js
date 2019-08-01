@@ -5,6 +5,9 @@ import classes from './Cockpit.css';
 
 // Second most important hook. It Combines the functionality or 
 // the cases that can be covered by all the class based components life-cycles.
+// useEffect, exec after every render cycle. So function does not run inmediately.
+// It runs after the jsx code has been rendered  for the first time and therefore
+
 
 // By default takes a function that will run for every render cycle.
 
