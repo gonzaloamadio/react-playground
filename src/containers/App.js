@@ -26,7 +26,8 @@ import classes from './App.css';
 // import HocComponent from '../components/hoc-cmp/hoc-component'
 // import HocFunction from '../components/hoc-cmp/hoc-function'
 // import PropTypesCmp from '../components/prop-types/PropTypes'
-import ContextConsumerProvider from '../components/context/01-provider-consumer'
+// import ContextConsumerProvider from '../components/context/01-provider-consumer'
+import ContexMoreElegant from '../components/context/02-contextType-useContext'
 
 
 class App extends Component {
@@ -82,7 +83,9 @@ class App extends Component {
         {/* <PropTypesCmp /> */}
 
         {/* ----- Context ----- */}
-        <ContextConsumerProvider />
+        {/* <ContextConsumerProvider /> */}
+        <ContexMoreElegant />
+
 
       </div>
      // </StyleRoot>
