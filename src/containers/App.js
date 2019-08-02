@@ -9,7 +9,7 @@ import classes from './App.css';
 // import SetStateCorrectly from '../components/state/setStateCorrectly'
 // import Pmbc from '../components/communication/pass-methods-btw-components'
 // import Ref from '../components/communication/references/Ref'
-import RefWithHooks from '../components/communication/references/RefWithHooks'
+// import RefWithHooks from '../components/communication/references/RefWithHooks'
 // import ConditionalRender from '../components/presentational/conditional-render'
 // import ConditionalRenderUpgraded from '../components/presentational/conditional-render-upgraded'
 // import Lists from '../components/presentational/lists'
@@ -26,6 +26,7 @@ import RefWithHooks from '../components/communication/references/RefWithHooks'
 // import HocComponent from '../components/hoc-cmp/hoc-component'
 // import HocFunction from '../components/hoc-cmp/hoc-function'
 // import PropTypesCmp from '../components/prop-types/PropTypes'
+import ContextConsumerProvider from '../components/context/01-provider-consumer'
 
 
 class App extends Component {
@@ -45,7 +46,7 @@ class App extends Component {
 
         {/* <Pmbc /> */}
         {/* <Ref /> */}
-        <RefWithHooks />
+        {/* <RefWithHooks /> */}
 
         {/* ----- RENDERING / PRESENTATIONAL ----- */}
 
@@ -79,6 +80,9 @@ class App extends Component {
 
         {/* ----- Prop Types ----- */}
         {/* <PropTypesCmp /> */}
+
+        {/* ----- Context ----- */}
+        <ContextConsumerProvider />
 
       </div>
      // </StyleRoot>
